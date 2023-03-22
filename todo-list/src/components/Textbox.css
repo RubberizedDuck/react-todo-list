@@ -1,0 +1,12 @@
+.todo-input {
+  display: flex;
+  margin: 0 1rem;
+  padding-top: 12px;
+}
+
+.SearchBox {
+  width: 350px;
+  height: 30px;
+  font-size: medium;
+  font-weight: bold;
+}
