@@ -1,0 +1,6 @@
+.svg-cross {
+  display: flex;
+  width: 30px;
+  max-width: 95%;
+  padding-top: 7px;
+}
