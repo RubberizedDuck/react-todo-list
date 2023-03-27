@@ -12,8 +12,19 @@
   border-radius: 12px;
   color: white;
 }
+
+.todo-container li {
+  list-style: none;
+}
+
 .todo-list {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.todo-list__item {
+  /* display: flex;
+  align-items: center; */
+  width: 100%;
 }
