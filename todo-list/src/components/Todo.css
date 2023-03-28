@@ -18,13 +18,14 @@
 }
 
 .todo-list {
+  background-color: blue;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
 .todo-list__item {
-  /* display: flex;
-  align-items: center; */
+  display: flex;
+  align-items: center;
   width: 100%;
 }
