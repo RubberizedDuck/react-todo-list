@@ -7,17 +7,26 @@ const dummy_todos = [{ text: "", id: Math.random().toString() }];
 
 function App() {
 	const [todos, setTodos] = useState(dummy_todos);
-	const todoId = dummy_todos[0].id;
 
 	function addTodoHandler(todo) {
 		setTodos((prevTodo) => {
 			return [todo, ...prevTodo];
 		});
 	}
+
+	function deleteTodoHandler(id) {
+		setTodos((prevTodos) => prevTodos.filter((todo) => todo.id !== id));
+	}
+
+	console.log("what is in the todos", todos);
 	return (
 		<div>
 			<Heading />
-			<Todo todoList={todos} onAddTodo={addTodoHandler} todoId={todoId} />
+			<Todo
+				todoList={todos}
+				onAddTodo={addTodoHandler}
+				onDeleteTodo={deleteTodoHandler}
+			/>
 		</div>
 	);
 }
