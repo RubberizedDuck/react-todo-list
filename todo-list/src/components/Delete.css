@@ -4,3 +4,6 @@
   max-width: 95%;
   padding-top: 7px;
 }
+.svg-cross:hover {
+  cursor: pointer;
+}
