@@ -8,22 +8,29 @@ function Todo(props) {
 		const textBoxData = { ...savedTextBoxData, id: Math.random().toString() };
 		props.onAddTodo(textBoxData);
 		console.log("This is textBoxData var", textBoxData);
+		console.log("This is what is in savedTextBoxData", savedTextBoxData);
 	}
 
-	console.log("This is props.todoList ", props.todoList);
+	function handleDelete(id) {
+		props.onDeleteTodo(id);
+	}
+
+	// console.log("This is props.todoList ", props.todoList);
+	console.log("This is the props in Todo.js", props);
 
 	return (
 		<div className="todo-container">
 			<ul>
 				<div className="todo-list">
 					<li>
-						{props.todoList.map((todo) => (
-							<div className="todo-list__item" key={todo.id}>
-								<Checkbox />
-								<Textbox onSubmitTextBoxData={submittedTextBoxData} />
-								<Delete />
-							</div>
-						))}
+						{props.todoList &&
+							props.todoList.map((todo) => (
+								<div className="todo-list__item" key={todo.id}>
+									<Checkbox />
+									<Textbox onSubmitTextBoxData={submittedTextBoxData} />
+									<Delete onDeleteHandler={() => handleDelete(todo.id)} />
+								</div>
+							))}
 					</li>
 				</div>
 			</ul>
