@@ -9,6 +9,8 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  margin-top: 3px;
+  margin-right: 4px;
 }
 
 .container input {
@@ -61,3 +63,4 @@
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
