@@ -1,10 +1,18 @@
+import { useState } from "react";
 import "./Checkbox.css";
 
-function Checkbox() {
+function Checkbox(props) {
+	const [isChecked, setisChecked] = useState(false);
+
+	function handleCheckboxChange(event) {
+		setisChecked(event.target.checked);
+		props.onChange(event.target.checked);
+	}
+
 	return (
 		<div>
 			<label className="container">
-				<input type="checkbox" />
+				<input type="checkbox" onChange={handleCheckboxChange} />
 				<span className="checkmark"></span>
 			</label>
 		</div>
