@@ -18,7 +18,6 @@ function App() {
 		setTodos((prevTodos) => prevTodos.filter((todo) => todo.id !== id));
 	}
 
-	console.log("what is in the todos", todos);
 	return (
 		<div>
 			<Heading />
