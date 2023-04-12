@@ -1,4 +1,4 @@
-import "./Delete.css";
+import "../styles/Delete.css";
 
 function Delete(props) {
 	return (

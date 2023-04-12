@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./Textbox.css";
+import "../styles/Textbox.css";
 import Checkbox from "./Checkbox";
 
 function Textbox(props) {

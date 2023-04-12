@@ -1,6 +1,6 @@
 import Textbox from "./Textbox";
 import Delete from "./Delete";
-import "./Todo.css";
+import "../styles/Todo.css";
 
 function Todo(props) {
 	function submittedTextBoxData(savedTextBoxData) {
