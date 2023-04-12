@@ -17,13 +17,12 @@ function Todo(props) {
 			<ul>
 				<div className="todo-list">
 					<li>
-						{props.todoList &&
-							props.todoList.map((todo) => (
-								<div className="todo-list__item" key={todo.id}>
-									<Textbox onSubmitTextBoxData={submittedTextBoxData} />
-									<Delete onDeleteHandler={() => handleDelete(todo.id)} />
-								</div>
-							))}
+						{props.todoList.map((todo) => (
+							<div className="todo-list__item" key={todo.id}>
+								<Textbox onSubmitTextBoxData={submittedTextBoxData} />
+								<Delete onDeleteHandler={() => handleDelete(todo.id)} />
+							</div>
+						))}
 					</li>
 				</div>
 			</ul>
