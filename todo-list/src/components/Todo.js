@@ -1,5 +1,5 @@
-import Textbox from "./Textbox";
-import Delete from "./Delete";
+import TodoRow from "./TodoRow";
+import DeleteIcon from "./DeleteIcon";
 import "../styles/Todo.css";
 
 function Todo(props) {
@@ -19,8 +19,8 @@ function Todo(props) {
 					<li>
 						{props.todoList.map((todo) => (
 							<div className="todo-list__item" key={todo.id}>
-								<Textbox onSubmitTextBoxData={submittedTextBoxData} />
-								<Delete onDeleteHandler={() => handleDelete(todo.id)} />
+								<TodoRow onSubmitTextBoxData={submittedTextBoxData} />
+								<DeleteIcon onDeleteHandler={() => handleDelete(todo.id)} />
 							</div>
 						))}
 					</li>
