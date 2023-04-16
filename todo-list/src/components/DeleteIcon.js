@@ -1,6 +1,6 @@
 import "../styles/Delete.css";
 
-function Delete(props) {
+function DeleteIcon(props) {
 	return (
 		<div className="svg-cross" onClick={props.onDeleteHandler}>
 			<img
@@ -12,4 +12,4 @@ function Delete(props) {
 	);
 }
 
-export default Delete;
+export default DeleteIcon;
