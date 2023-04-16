@@ -3,10 +3,10 @@ import { useState } from "react";
 import Heading from "./components/Heading";
 import Todo from "./components/Todo";
 
-const dummy_todos = [{ text: "", id: Math.random().toString() }];
-
 function App() {
-	const [todos, setTodos] = useState(dummy_todos);
+	const [todos, setTodos] = useState([
+		{ text: "", id: Math.random().toString() },
+	]);
 
 	function addTodoHandler(todo) {
 		setTodos((prevTodo) => {
