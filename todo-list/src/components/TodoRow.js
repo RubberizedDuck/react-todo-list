@@ -2,7 +2,7 @@ import { useState } from "react";
 import "../styles/Textbox.css";
 import Checkbox from "./Checkbox";
 
-function Textbox(props) {
+function TodoRow(props) {
 	const [textBox, setTextBox] = useState("Create Todo");
 	const [isChecked, setIsChecked] = useState(false);
 
@@ -42,4 +42,4 @@ function Textbox(props) {
 	);
 }
 
-export default Textbox;
+export default TodoRow;
